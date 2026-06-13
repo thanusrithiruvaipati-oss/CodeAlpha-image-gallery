@@ -11,24 +11,78 @@
     <h1>Image Gallery</h1>
     <p>Explore Aesthetism</p>
     </header>
-    <br>
-    <br>
+    <br><br>
+    <div class="controls">
+        <input type="text" id="searchBar" placeholder="Search images...">
+        <div class="categories">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="beaches">Beaches</button>
+            <button class="filter-btn" data-category="mountains">Mountains</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+            <button class="filter-btn" data-category="travel">Travel</button>
+        </div>
+    </div>
     <div class="gallery">
-        <img src="images/Beach-Sunset.jpg" alt="Sunset at Beach"/>
-        <img src="images/ocean-water.jpg" alt="ocean water"/>
-        <img src="images/beach.jpg" alt="beach"/>
-        <img src="images/waterfall.jpg" alt="waterfall"/>
-        <img src="images/mountains.jpg" alt="mountain"/>
-        <img src="images/snow-mountains.jpg" alt="snow mountain"/>
-        <img src="images/bird.jpg" alt="bird"/>
-        <img src="images/view.jpg" alt="view"/>
-        <img src="images/bus.jpg" alt="bus"/>
-        <img src="images/flower.jpg" alt="flower"/>
-        <img src="images/house.jpg" alt="house"/>
-        <img src="images/tiger.jpg" alt="tiger"/>
-        <img src="images/lakes.jpg" alt="lakes"/>
-        <img src="images/deer.jpg" alt="deer"/>
-        <img src="images/forests.jpg" alt="forests"/>
+        <div class="item" data-category="beaches">
+            <img src="images/Beach-Sunset.jpg" alt="Sunset at Beach"/>
+            <div class="overlay"><h3>Beach Sunset</h3></div>
+        </div>
+        <div class="item" data-category="beaches">
+            <img src="images/ocean-water.jpg" alt="ocean water"/>
+            <div class="overlay"><h3>Ocean Water</h3></div>
+        </div>
+        <div class="item" data-category="beaches">
+            <img src="images/beach.jpg" alt="beach"/>
+            <div class="overlay"><h3>Beach</h3></div>
+        </div>
+        <div class="item" data-category="mountains">
+            <img src="images/waterfall.jpg" alt="waterfall"/>
+            <div class="overlay"><h3>Waterfall</h3></div>
+        </div>
+        <div class="item" data-category="mountains">
+            <img src="images/mountains.jpg" alt="mountain"/>
+            <div class="overlay"><h3>Mountains</h3></div>
+        </div>
+        <div class="item" data-category="mountains">
+            <img src="images/snow-mountains.jpg" alt="snow mountain"/>
+            <div class="overlay"><h3>Snow Mountains</h3></div>
+        </div>
+        <div class="item" data-category="animals">
+            <img src="images/bird.jpg" alt="bird"/>
+            <div class="overlay"><h3>bird</h3></div>
+        </div>
+        <div class="item" data-category="beaches">
+            <img src="images/view.jpg" alt="view"/>
+            <div class="overlay"><h3>ocean View</h3></div>
+        </div>
+        <div class="item" data-category="travel">
+            <img src="images/bus.jpg" alt="bus"/>
+            <div class="overlay"><h3>Bus</h3></div>
+        </div>
+        <div class="item">
+            <img src="images/flower.jpg" alt="flower"/>
+            <div class="overlay"><h3>Flower</h3></div>
+        </div>
+        <div class="item" data-category="travel">
+            <img src="images/house.jpg" alt="house"/>
+            <div class="overlay"><h3>House</h3></div>
+        </div>
+        <div class="item" data-category="animal">
+            <img src="images/tiger.jpg" alt="tiger"/>
+            <div class="overlay"><h3>Tiger</h3></div>
+        </div>
+        <div class="item" data-category="mountains">
+            <img src="images/lakes.jpg" alt="lakes"/>
+            <div class="overlay"><h3>Lake</h3></div>
+        </div>
+        <div class="item" data-category="animals">
+            <img src="images/deer.jpg" alt="deer"/>
+            <div class="overlay"><h3>Deer</h3></div>       
+        </div>
+        <div class="item">
+            <img src="images/forests.jpg" alt="forests"/>
+            <div class="overlay"><h3>Forest</h3></div>
+        </div>    
     </div>
     <div class="lightbox">
         <span class="close">&times;</span>

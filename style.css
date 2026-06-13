@@ -22,6 +22,47 @@ p{
     margin-bottom: 30px;
 }
 
+.controls{
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#searchBar{
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #1C2541;
+    color: white;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background: #5BC0BE;
+    color: black;
+}
+
 .gallery{
     max-width: 1400px;
     margin: auto;
@@ -37,12 +78,22 @@ p{
     object-fit: cover;
     border-radius:10px;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px black;
 }
 
-.gallery img:hover{
+.item img:hover{
     transform: scale(1.05);
+    box-shadow: 0 8px 16px black;
 }
 
+.overlay h3{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+.item:hover .overlay h3{
+    transform: translateY(-20px);
+}
 .lightbox{
     display: none;
     position: fixed;
